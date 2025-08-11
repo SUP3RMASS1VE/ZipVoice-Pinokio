@@ -1,5 +1,9 @@
 module.exports = {
-  version: "4.0",
+  version: "3.7",
+  title: "ZipVoice",
+  description: "Fast and High-Quality Zero-Shot voice clone Text-to-Speech with Flow Matching",
+  icon: "icon.png",
+  version: "3.7",
   menu: async (kernel, info) => {
     let installed = info.exists("app/venv")
     let running = {
