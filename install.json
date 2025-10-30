@@ -9,6 +9,18 @@
       }
     },
     {
+      "method": "shell.run",
+      "params": {
+        "venv": "venv",
+        "path": "app",
+        "chain": true,
+        "input": null,
+        "message": [
+          "uv pip install -r requirements.txt"
+        ]
+      }
+    },
+    {
       "method": "script.start",
       "params": {
         "uri": "torch.js",
@@ -19,18 +31,6 @@
           "triton": false,
           "sageattention": false
         }
-      }
-    },
-    {
-      "method": "shell.run",
-      "params": {
-        "venv": "venv",
-        "path": "app",
-        "chain": true,
-        "input": null,
-        "message": [
-          "uv pip install -r requirements.txt"
-        ]
       }
     }
   ]
